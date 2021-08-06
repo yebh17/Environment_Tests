@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('ServersHealthCheck') {
             steps {
+                sh 'mercury'
                 sh 'bash checkHealth'
             }
         }
