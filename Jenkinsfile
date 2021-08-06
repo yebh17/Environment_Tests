@@ -1,15 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('Example') {
+        stage('ServersHealthCheck') {
             steps {
-                echo 'Hello World'
+                sh './checkHealth'
             }
         }
     }
     post { 
         always { 
-            echo 'Good! working, again'
+            echo 'All Servers Health Checks Done!'
         }
     }
 }
