@@ -9,7 +9,7 @@ pipeline {
     }
     post { 
         always { 
-            echo 'Good! working'
+            echo 'Good! working, again'
         }
     }
 }
