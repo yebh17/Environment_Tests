@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('ServersHealthCheck') {
             steps {
-                sh 'mercury'
+                sh 'ssh mercury@192.168.1.186'
                 sh 'bash checkHealth'
             }
         }
