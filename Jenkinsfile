@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('ServersHealthCheck') {
             steps {
-                sh './checkHealth'
+                sh 'bash checkHealth'
             }
         }
     }
